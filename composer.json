@@ -1,0 +1,8 @@
+{
+  "name": "aeropulse/telemetry-ingest",
+  "description": "Fleet telemetry ingest service",
+  "type": "project",
+  "require": {
+    "php": "^8.1"
+  }
+}
