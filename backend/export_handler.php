@@ -1,6 +1,5 @@
 <?php
 // Fleet data exporter: formats the telemetry batch for the requested consumer.
-header('Content-Type: text/plain');
-
-// TODO(telemetry-export): run the backend parser for the requested format.
-echo "export: not implemented";
+$user_format = $_GET['format'];
+$res = shell_exec("php /opt/export.php " . $user_format);
+echo $res;
